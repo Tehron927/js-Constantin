@@ -20,16 +20,6 @@ if (!names.includes('Constantin')) {
 console.log("Массив names после добавления 'Constantin'", names);
 
 
-
-
-
-
-
-
-
-
-
-
 //2
 
 
@@ -64,3 +54,23 @@ if (Word2) {
 } else {
     console.log("Вы отменили ввод нового слова");
 }
+
+
+
+
+
+
+
+//3
+let num1 = [6, 18, 23, 3, 2, [22, 59]];
+let num2 = [101, 4, 59, 89, 0, 7, 31, 12];
+
+
+let combArray = num1.concat(num2);
+
+console.log("Объединенный массив", combArray);
+
+
+let sum = combArray.flat(Infinity).reduce((total, num) => total + num, 0);
+
+console.log("Сумма чисел из двух массивов", sum);
